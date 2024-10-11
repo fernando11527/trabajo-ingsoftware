@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flipando a Colores - Tu tienda de útiles escolares y servicios de fotocopiado.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/TRABAJO FINAL ING/image-removebg-preview (6).png">
+    <title>Flipando a Colores</title>
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header>
+        <div class="container2">
+            <img src="img/logo.png" alt="Logo Flipando a Colores" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#quienes-somos">QUIÉNES SOMOS</a></li>
+                    <li><a href="#servicios">SERVICIOS</a></li>
+                    <li><a href="#productos">PRODUCTOS</a></li>
+                    <li><a href="#formulario">CONSULTAS</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#faq">PREGUNTAS FRECUENTES</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de Promociones -->
+    <section id="promociones" class="promotions">
+        <div class="container">
+            <h2>Promociones</h2>
+            <div class="promo-images">
+                <img src="img/img1.jpg" alt="Promoción 1" class="promo-image">
+                <img src="img/img2.jpg" alt="Promoción 2" class="promo-image">
+                <img src="img/img3.jpg" alt="Promoción 3" class="promo-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Quiénes Somos -->
+    <section id="quienes-somos" class="about">
+        <div class="container">
+            <h2>Quiénes Somos</h2>
+            <p>En <strong>Flipando a Colores</strong> ofrecemos todo lo necesario para tu día a día escolar y
+                profesional. Somos una <strong>librería y fotocopiadora</strong> especializada en productos escolares y
+                servicios de impresión de alta calidad. Realizamos <strong>anillados, plastificados, tarjetas de
+                    invitación, stickers, imanes, folletos, escaneos</strong>, y más. Además, contamos con
+                <strong>impresiones desde pendrives, memorias y sitios web</strong>, siempre con precios especiales para
+                estudiantes y docentes.</p>
+                <br>
+                <br>
+            <p>También nos dedicamos a la <strong>personalización de productos</strong> como <strong>remeras, pines,
+                    estampados y vinilos</strong>, brindando soluciones creativas para cualquier ocasión. ¡En
+                <strong>Flipando a Colores</strong>, te ayudamos a darle vida a tus ideas!</p>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2>Servicios</h2>
+            <div class="service-items">
+                <div class="service-item">
+                    <h3>Útiles Escolares y Papelería</h3>
+                    <p>Todo lo que necesitas para estar preparado: cuadernos, lápices, mochilas y más.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Fotocopiado e Impresión</h3>
+                    <p>Impresiones en blanco y negro o a color en distintos formatos para estudiantes y empresas.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Encuadernación y Plastificado</h3>
+                    <p>Protege tus documentos importantes con nuestros servicios de encuadernación y plastificado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion de productos -->
+    <section id="productos" class="productos">
+        <h1 class="headers">Productos</h1>
+        <input type="text" id="search-input" placeholder="Buscar productos..." oninput="filterProducts()" />
+        <section class="product-grid" id="product-grid">
+        </section>
+    </section>
+
+    <div class="load-more-container">
+        <button id="load-more" class="btn">Cargar más</button>
+    </div>
+
+    <!-- Sección de Formulario de Consultas -->
+    <div class="containerForm">
+    <section id="formulario" class="form">
+        
+            <h2>Consultas</h2>
+            <p>¿Tenes alguna duda sobre nuestros productos o servicios? ¡Escríbenos y te responderemos lo antes posible!
+            </p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="consulta">Consulta:</label>
+                <textarea id="consulta" name="consulta" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Enviar Consulta</button>
+            </form>
+       
+    </section>
+</div>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact">
+        <div class="containerContacto">
+            <h2>Contacto</h2>
+            <p>Visítanos o contáctanos en nuestras redes sociales o mediante nuestro número de teléfono. ¡Estamos para
+                ayudarte!</p>
+            <br>
+            <ul>
+                <li><strong>Dirección:</strong> Amenabar esq. Sarmiento, Rosario</li>
+                <li><strong>Teléfono:</strong> +54 341 683 6666⁣⁣</li>
+                <li><strong>Email:</strong> Flipando.rosario@gmail.com</li>
+                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/flipandoacolores/"
+                        style="text-decoration: none; color:black;">flipandoacolores</a></li>
+            </ul>
+        </div>
+
+        <img src="img/pagos.jpg" alt="MedioDePago" class="fotopago"/>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-item">
+                <h3>¿Qué métodos de pago aceptan?</h3>
+                <p>Aceptamos efectivo, tarjetas de crédito y débito, y transferencias bancarias.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Hacen envíos?</h3>
+                <p>Sí, realizamos envíos a domicilio en la ciudad de Rosario y sus alrededores.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Tienen descuentos para estudiantes?</h3>
+                <p>Sí, ofrecemos descuentos especiales para estudiantes y docentes. Consulta en nuestra tienda para más detalles.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Puedo personalizar productos?</h3>
+                <p>¡Por supuesto! Ofrecemos servicios de personalización para varios productos. Consulta con nosotros para más información.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Flipando a Colores. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/3416836666" class="whatsapp-button" target="_blank">
+        <img src="img/whatsapp-icon.png" alt="WhatsApp" />
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
