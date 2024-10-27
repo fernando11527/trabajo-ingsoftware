@@ -11,7 +11,6 @@ const products = [
     { name: "Botella", price: "$10000", img: "img/producto8.jpg" },
     { name: "Remera GATO", price: "$4000", img: "img/remera3.jpg" },
     { name: "Vaso NOB", price: "$9000", img: "img/producto7.jpg" },
-    // Puedes añadir más productos aquí
 ];
 
 let currentIndex = 0;

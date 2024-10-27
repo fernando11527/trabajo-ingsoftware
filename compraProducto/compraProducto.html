@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipando a Colores</title>
+    <link rel="icon" href="../img/icono.jpg">
+    <link rel="stylesheet" href="compraProducto.css">
+    <script defer src="compraProducto.js"></script>
+</head>
+
+<body>
+    <header class="cabecera">
+        <img src="../img/logo.png" alt="Logo Flipando a Colores" class="logo">
+        <nav>
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <h1>COMPRAR PRODUCTOS</h1>
+            <div id="contenedorProductos" class="productos-contenedor"></div>
+        <aside class="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="listaCarrito"></ul>
+            <p>Total: $<span id="totalCarrito">0</span></p>
+            <button onclick="finalizarCompra()">Comprar</button>
+        </aside>
+    </main>
+</body>
+
+</html>
